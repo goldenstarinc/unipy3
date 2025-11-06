@@ -24,10 +24,12 @@
   python3 -m venv venv
   source venv/bin/activate
   pip install -r requirements.txt
+  ```
 3. Примените миграции и запустите сервер:
   ```bash    
   python manage.py migrate
   python manage.py runserver
+  ```
 4. Перейдите в браузере по адресу http://127.0.0.1:8000/
 
 ### С Docker
@@ -35,6 +37,7 @@
 2. Запустите:
   ```bash
   docker-compose up --build
+  ```
 3. Сервер будет доступен по адресу, указанному в docker-compose.yml
 
 ## Зависимости
@@ -43,9 +46,11 @@
 
 ## Структура проекта
 
-chess_site/             Django-приложение, веб-интерфейс
-chessboard/             Модуль логики шахматной доски / шахматной игры
-Dockerfile              Инструкция для контейнера приложения
-docker-compose.yml      Определяет сервисы (web / БД / др.)
-db.sqlite3              Локальная база данных для разработки
+|Директория|Отвечает за|
+|:---------|:----------|
+|chess_site/|Django-приложение, веб-интерфейс|
+|chessboard/|Модуль логики шахматной доски / шахматной игры|
+|Dockerfile|Инструкция для контейнера приложения|
+|docker-compose.yml|Определяет сервисы (web / БД / др.)|
+|db.sqlite3|Локальная база данных для разработки|
 
