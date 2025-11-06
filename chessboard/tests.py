@@ -2,6 +2,7 @@ from django.test import TestCase, Client
 from django.urls import reverse
 from .models import Game
 
+# Класс тестов
 class ChessGameViewTests(TestCase):
 
     def setUp(self):
